@@ -7,18 +7,21 @@ public class Aluno {
 	private String escolaridade;
 	private String[] disciplinas;
 	private String regiao;
-	
+	private Integer idade;
+	private Double mensalidade;
 	
 	
 	@Override
 	public String toString() {
 		
-		return String.format("[%s] O aluno %s (%s) da região %s está inscrito em %d disciplinas!", 
+		return String.format("[%s] O aluno %s (%s) Idade %s da região %s está inscrito em %d disciplinas, pagando %.2f de mensalidade!", 
 				escolaridade,
 				nome,
 				email,
+				idade,
 				regiao,
-				disciplinas.length
+				disciplinas.length,
+				mensalidade
 			);
 	}
 	
@@ -64,6 +67,22 @@ public class Aluno {
 	}
 	public void setRegiao(String regiao) {
 		this.regiao = regiao;
+	}
+
+	public Integer getIdade() {
+		return idade;
+	}
+
+	public void setIdade(Integer idade) {
+		this.idade = idade;
+	}
+
+	public Double getMensalidade() {
+		return mensalidade;
+	}
+
+	public void setMensalidade(Double mensalidade) {
+		this.mensalidade = mensalidade;
 	}
 	
 	
