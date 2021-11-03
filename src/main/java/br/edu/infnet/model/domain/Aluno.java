@@ -2,6 +2,8 @@ package br.edu.infnet.model.domain;
 
 public class Aluno {
 	
+	private Integer id;
+	private String senha;
 	private String nome;
 	private String email;
 	private String escolaridade;
@@ -9,6 +11,7 @@ public class Aluno {
 	private String regiao;
 	private Integer idade;
 	private Double mensalidade;
+	
 	
 	
 	@Override
@@ -83,6 +86,22 @@ public class Aluno {
 
 	public void setMensalidade(Double mensalidade) {
 		this.mensalidade = mensalidade;
+	}
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
 	}
 	
 	
